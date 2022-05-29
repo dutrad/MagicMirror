@@ -90,6 +90,11 @@ let config = {
 			config: {}
 		},
 		{
+			module: "MMM-ArduinoTemp",
+			position: "bottom_left",
+			config: {}
+		},
+		{
 			module: "newsfeed",
 			position: "bottom_bar",
 			config: {
