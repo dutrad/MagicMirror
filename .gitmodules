@@ -10,3 +10,6 @@
 [submodule "modules/MMM-OpenWeatherForecast"]
 	path = modules/MMM-OpenWeatherForecast
 	url = https://github.com/jclarke0000/MMM-OpenWeatherForecast.git
+[submodule "modules/MMM-ArduinoTemp"]
+	path = modules/MMM-ArduinoTemp
+	url = https://github.com/dutrad/MMM-ArduinoTemp.git
