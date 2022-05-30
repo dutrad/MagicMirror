@@ -13,3 +13,4 @@
 [submodule "modules/MMM-ArduinoTemp"]
 	path = modules/MMM-ArduinoTemp
 	url = https://github.com/dutrad/MMM-ArduinoTemp.git
+	branch = main
