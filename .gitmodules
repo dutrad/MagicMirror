@@ -1,0 +1,20 @@
+[submodule "modules/MMM-CalendarExt2"]
+	path = modules/MMM-CalendarExt2
+	url = https://github.com/MMM-CalendarExt2/MMM-CalendarExt2.git
+	branch = main
+[submodule "modules/MMM-ArduinoTemp"]
+	path = modules/MMM-ArduinoTemp
+	url = https://github.com/dutrad/MMM-ArduinoTemp.git
+	branch = main
+[submodule "modules/MMM-AirQuality"]
+	path = modules/MMM-AirQuality
+	url = https://github.com/CFenner/MMM-AirQuality.git
+	branch = main
+[submodule "modules/MMM-OpenWeatherForecast"]
+	path = modules/MMM-OpenWeatherForecast
+	url = https://github.com/jclarke0000/MMM-OpenWeatherForecast.git
+	branch = master
+[submodule "modules/MMM-PiTemp"]
+	path = modules/MMM-PiTemp
+	url = https://github.com/ckoutavas/MMM-PiTemp.git
+	branch = master
