@@ -67,17 +67,18 @@ let config = {
 				longitude: -7.5011,          //so does a string
 				showFeelsLikeTemp: true,
 				useAnimatedIcons: false,
+				showDailyForecast: false
 			}
 		},
 		{
 			module: 'MMM-GmailFeed',
-			position: 'bottom_left',
+			position: 'bottom_right',
 			config: {
 				username: 'dutrad.vinicius@gmail.com',
 				password: 'sxvniyjuumhqunmb',
 				updateInterval: 60000,
-				maxEmails: 5,
-				maxSubjectLength: 38,
+				maxEmails: 3,
+				maxSubjectLength: 30,
 				maxFromLength: 15,
 				playSound: true,
 				autoHide: true,
@@ -86,12 +87,12 @@ let config = {
 		},
 		{
 			module: "MMM-PiTemp",
-			position: "bottom_left",
+			position: "bottom_right",
 			config: {}
 		},
 		{
 			module: "MMM-ArduinoTemp",
-			position: "bottom_left",
+			position: "bottom_right",
 			config: {}
 		},
 		{
@@ -124,76 +125,46 @@ let config = {
 				animationSpeed: 5000
 			}
 		},
-		/*{
+		{
 			module: 'MMM-CalendarExt2',
-			position: 'middle_left',
+			position: 'middle_center',
 			config: {
 				defaultSet: {
 					view: {},
 					scene: {},
-					scanInterval: 1000 * 60 * 5,
+					scanInterval: 60000,
 					calendar: {
-						beforeDays: 5,
+						beforeDays: 0,
 						afterDays: 30
 					},
 				},
 				calendars: [
 					{
-						url: 'https://calendar.google.com/calendar/u/0?cid=ZHV0cmFkLnZpbmljaXVzQGdtYWlsLmNvbQ',
+						url: 'https://calendar.google.com/calendar/ical/dutrad.vinicius%40gmail.com/public/basic.ics',
 						name: 'Vinicius',
-						icon: 'emojione-v1:family-man-woman-boy-boy'
 					},
 				],
 				views: [
-					{
-						name: 'days1',
-						mode: 'daily',
-						type: "row",
-						slotCount: 3,
-						hideOverflow: false,
-						filterPassedEvent: true,
-						position: 'middle_center',
-						timeFormat: "h:mm A",
-						slotTitleFormat: "ddd",
-						slotSubTitleFormat: "MMM Do",
+					{ 
+					  name: "view1",
+					  mode: "week",
+					  slotCount: "5",
+					  maxItems: "1000",
+					  hideOverflow: false,
+					  slotMaxHeight: "95px",
+					  monthFormat: "MMMM YYYY",
+					  position: "top_left",
+					  calendars: []
 					},
-					{
-						name: 'days2',
-						mode: 'daily',
-						type: "row",
-						slotCount: 3,
-						hideOverflow: false,
-						slotMaxHeight: "140px",
-						filterPassedEvent: true,
-						fromNow: 3,
-						position: 'lower_third',
-						timeFormat: "h:mm A",
-						slotTitleFormat: "ddd",
-						slotSubTitleFormat: "MMM Do",
-					},
-					{
-						name: 'days3',
-						mode: 'daily',
-						type: "row",
-						slotCount: 3,
-						hideOverflow: false,
-						slotMaxHeight: "100px",
-						filterPassedEvent: true,
-						fromNow: 6,
-						position: 'lower_third',
-						timeFormat: "h:mm A",
-						slotTitleFormat: "ddd",
-						slotSubTitleFormat: "MMM Do",
-					},
-				],
-				scenes: [
-					{
-						name: "DEFAULT",
+				  ],
+				  scenes: [
+					{  
+					  name: "DEFAULT",
 					},
 				],
 			},
 
-		},*/
+		},
 	]
 };
 
