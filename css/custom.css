@@ -1,0 +1,146 @@
+/* MagicMirror² Custom CSS Sample
+ *
+ * Change color and fonts here.
+ *
+ * Beware that properties cannot be unitless, so for example write '--gap-body: 0px;' instead of just '--gap-body: 0;'
+ *
+ * MIT Licensed.
+ */
+
+/* Uncomment and adjust accordingly if you want to import another font from the google-fonts-api: */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap'); */
+
+body {
+  background-size: cover;
+  margin: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+}
+
+.xsmall {
+  font-size: 17px;
+}
+
+.region.top.right {
+  height: 60%;
+}
+
+.region.bottom.right {
+  width: 25%;
+}
+
+.region.top.left {
+  width: 72%;
+}
+
+.calendar .time {
+  padding-left: 20px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.MMM-DarkSkyForecast .module-content {
+  width: unset;
+}
+
+.CX2 {
+  --font-size: 14px;
+}
+
+.CX2 .event {
+  padding: 0px;
+  overflow: hidden;
+  text-overflow: clip !important;
+}
+
+.CX2 .weekSlot .timelineSleeve {
+  height: calc(var(--font-size) + 5px);
+}
+
+.CX2 .weeksmark {
+  display: none;
+}
+
+.CX2 .event.passed::before {
+  background: none;
+}
+
+.CX2 .cellSlot .slotTitle,
+.CX2 .cellSlot .slotSubTitle,
+.CX2 .cellSlot .slotAltTitle {
+  font-size: 20px;
+  color: #fff;
+}
+
+.CX2 .today .slotHeader {
+  background: rgba(64, 64, 64, 0.8);
+  color: #000;
+}
+
+.CX2 .today .slotHeader .slotTitle {
+  color: #fff;
+}
+
+.CX2 .today .slotContent {
+  background: #eeeeee69;
+  border: 1px solid white;
+}
+
+.CX2 .me,
+.me.event.fullday {
+  border-radius: 5px;
+  background-color: #83ccd5;
+  color: #000;
+}
+
+.CX2 .birthday,
+.birthday.event.fullday {
+  border-radius: 5px;
+  background-color: #f0e68c;
+  color: #000;
+}
+
+.CX2 .college,
+.college.event.fullday {
+  border-radius: 5px;
+  background-color: #a473ac;
+  color: #000;
+}
+
+.CX2 .holiday,
+.holiday.event.fullday {
+  border-radius: 5px;
+  background-color: #7b9ccc;
+  color: #000;
+}
+.CX2 .slot > .slotContent {
+  background-image: none;
+}
+
+.CX2 .monthViewTitle {
+  text-align: left;
+}
+
+.CX2 .eventTitle {
+  font-weight: normal;
+  text-overflow: unset !important;
+}
+
+.CX2 .weekSlot .eventMain {
+  overflow: hidden !important;
+}
+
+.scroll-text {
+  /*transform: translateX(100%);
+  animation: my-animation 5s linear infinite;*/
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
