@@ -76,7 +76,7 @@ let config = {
 			config: {
 				username: 'dutrad.vinicius@gmail.com',
 				password: 'sxvniyjuumhqunmb',
-				updateInterval: 60000,
+				updateInterval: 1000*60*10,
 				maxEmails: 3,
 				maxSubjectLength: 30,
 				maxFromLength: 15,
@@ -132,22 +132,35 @@ let config = {
 				defaultSet: {
 					view: {},
 					scene: {},
-					scanInterval: 60000,
+					scanInterval: 1000*60*30,
 					calendar: {
-						beforeDays: 0,
+						beforeDays: 5,
 						afterDays: 30
 					},
 				},
 				calendars: [
 					{
 						url: 'https://calendar.google.com/calendar/ical/dutrad.vinicius%40gmail.com/public/basic.ics',
-						name: 'Vinicius',
+						name: 'Vinicius'
 					},
+					{
+						url: 'https://calendar.google.com/calendar/ical/f2uqkoafms6m6rt80a1vo6ufps%40group.calendar.google.com/public/basic.ics',
+						name: 'Capgemini'
+					},
+					{
+						url: 'https://calendar.google.com/calendar/ical/2l4eq704kc9s8o5n0kapsdkncg%40group.calendar.google.com/public/basic.ics',
+						name: 'Luna'
+					},
+					{
+						url: 'https://calendar.google.com/calendar/ical/en.portuguese%23holiday%40group.v.calendar.google.com/public/basic.ics',
+						name: 'Portuguese Holidays'
+					}
 				],
 				views: [
 					{ 
 					  name: "view1",
-					  mode: "week",
+					  mode: "daily",
+					  type: "row",
 					  slotCount: "5",
 					  maxItems: "1000",
 					  hideOverflow: false,
@@ -159,7 +172,7 @@ let config = {
 				  ],
 				  scenes: [
 					{  
-					  name: "DEFAULT",
+					  name: "view1",
 					},
 				],
 			},
