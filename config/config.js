@@ -141,7 +141,8 @@ let config = {
 				calendars: [
 					{
 						url: 'https://calendar.google.com/calendar/ical/dutrad.vinicius%40gmail.com/public/basic.ics',
-						name: 'Vinicius'
+						name: 'Vinicius',
+						icon: 'emojione-v1:boy'
 					},
 					{
 						url: 'https://calendar.google.com/calendar/ical/f2uqkoafms6m6rt80a1vo6ufps%40group.calendar.google.com/public/basic.ics',
@@ -149,11 +150,18 @@ let config = {
 					},
 					{
 						url: 'https://calendar.google.com/calendar/ical/2l4eq704kc9s8o5n0kapsdkncg%40group.calendar.google.com/public/basic.ics',
-						name: 'Luna'
+						name: 'Luna',
+						icon: 'emojione:kick-scooter'
 					},
 					{
 						url: 'https://calendar.google.com/calendar/ical/en.portuguese%23holiday%40group.v.calendar.google.com/public/basic.ics',
-						name: 'Portuguese Holidays'
+						name: 'Portuguese Holidays',
+						icon: 'emojione:flag-for-portugal'
+					},
+					{
+						url: 'https://calendar.google.com/calendar/ical/en.irish%23holiday%40group.v.calendar.google.com/public/basic.ics',
+						name: 'Irish Holidays',
+						icon: 'emojione:flag-for-ireland'
 					}
 				],
 				views: [

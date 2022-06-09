@@ -48,9 +48,10 @@ body {
 }
 
 .CX2 .event {
-  padding: 0px;
+  padding: 7px;
   overflow: hidden;
   text-overflow: clip !important;
+  border-radius: 5px;
 }
 
 .CX2 .weekSlot .timelineSleeve {
@@ -88,31 +89,10 @@ body {
 
 .CX2 .me,
 .me.event.fullday {
-  border-radius: 5px;
   background-color: #83ccd5;
   color: #000;
 }
 
-.CX2 .birthday,
-.birthday.event.fullday {
-  border-radius: 5px;
-  background-color: #f0e68c;
-  color: #000;
-}
-
-.CX2 .college,
-.college.event.fullday {
-  border-radius: 5px;
-  background-color: #a473ac;
-  color: #000;
-}
-
-.CX2 .holiday,
-.holiday.event.fullday {
-  border-radius: 5px;
-  background-color: #7b9ccc;
-  color: #000;
-}
 .CX2 .slot > .slotContent {
   background-image: none;
 }
@@ -126,13 +106,13 @@ body {
   text-overflow: unset !important;
 }
 
-.CX2 .weekSlot .eventMain {
-  overflow: hidden !important;
+.CX2 .eventMain {
+  transform: translateX(100%);
+  animation: my-animation 5s linear infinite;
 }
 
-.scroll-text {
-  /*transform: translateX(100%);
-  animation: my-animation 5s linear infinite;*/
+.CX2 .weekSlot .eventMain {
+  overflow: hidden !important;
 }
 
 /* for Chrome */
